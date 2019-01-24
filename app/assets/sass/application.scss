@@ -13,19 +13,39 @@ $path: "/public/images/";
 // Related items
 // (These styles will be moved to GOV.UK elements, duplicating here for now.)
 .govuk-related-items {
-  margin-top: $gutter;
-  border-top: 10px solid $govuk-blue;
-  padding-top: 5px;
+    margin-top: $gutter;
+    border-top: 10px solid $govuk-blue;
+    padding-top: 5px;
 
-  .heading-medium {
-    margin-top: 0.3em;
-    margin-bottom: 0.5em;
-  }
+    .heading-medium {
+        margin-top: 0.3em;
+        margin-bottom: 0.5em;
+    }
 
-  li {
-    margin-bottom: 10px;
-    list-style-type: none;
-  }
+    li {
+        margin-bottom: 10px;
+        list-style-type: none;
+    }
+}
+
+.search-field {
+    border: #005EA5 4px solid;
+    height: 60px;
+    width: 320px;
+    box-shadow: 0 2px 0 #003618;
+
+}
+
+.search-box {
+    height: 60px;
+    width: 60px;
+    background-color: #005EA5;
+    background-image: url("/public/images/magnifying glass.svg");
+    background-repeat: no-repeat;
+    background-size: 60%;
+    background-position: center;
+    margin-top: -3px;
+    margin-left: 260px;
 }
 
 // Add extra styles here, or re-organise the Sass files in whichever way makes most sense to you
