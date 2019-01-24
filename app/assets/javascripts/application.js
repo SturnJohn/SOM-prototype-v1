@@ -17,3 +17,7 @@ $(document).ready(function () {
   var showHideContent = new GOVUK.ShowHideContent()
   showHideContent.init()
 })
+
+function go(url) {
+  window.location.href = url;
+}

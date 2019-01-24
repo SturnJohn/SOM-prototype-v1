@@ -46,6 +46,11 @@ $path: "/public/images/";
     background-position: center;
     margin-top: -3px;
     margin-left: 260px;
+    border-style: none;
+}
+
+.right {
+    float: right; 
 }
 
 // Add extra styles here, or re-organise the Sass files in whichever way makes most sense to you
