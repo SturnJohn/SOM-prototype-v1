@@ -1,0 +1,71 @@
+{% extends "layout.html" %} {% block page_title %} GOV.UK prototype kit {% endblock %} {% block content %}
+
+<main id="content" role="main">
+
+    <div class="phase-banner">
+        <p>
+            <strong class="phase-tag">ALPHA</strong>
+            <span>This is a new service – your <a href="#">feedback</a> will help us to improve it.</span>
+        </p>
+    </div>
+
+    <div class="grid-row">
+
+        <div class="column-two-thirds">
+
+            <div>
+                <h2 class="margin-top-3 margin-bottom-3 heading-large">
+                    Buy this registration number
+                </h2>
+            </div>
+
+            <div class="margin-top-3 reg-icon-2-big">
+
+            </div>
+
+            <div>
+                <i class="margin-top-6 icon icon-important inline-block">
+                    <span class="visually-hidden">Warning</span>
+                </i>
+                <P class="inline-block minus-margin-top-5 margin-left-5">
+                    Please note: Your vehicle must be an F plate or newer, which was registered as new on or after 1 August 1988 to display this registration. If you are unsure, check your V5C Registration Certificate. For more information, click here
+                </P>
+            </div>
+
+
+            <details class="margin-top-3">
+
+                <summary><span class="summary">What does my V5C certificate look like </span></summary>
+
+                <div class="panel panel-border-narrow">
+
+                    <div class="security-code"></div>
+
+
+                </div>
+
+            </details>
+
+
+            <fieldset>
+
+                <div class="margin-top-5 multiple-choice">
+                    <input id="waste-type-1" name="waste-types" type="checkbox" value="waste-animal">
+                    <label for="waste-type-1">Yes, I understand the age of vehicle restriction.</label>
+                </div>
+
+            </fieldset>
+
+            <div>
+                <span><button class="margin-top-7 button" role="button">Continue</button></span>
+            </div>
+
+        </div>
+
+    </div>
+
+
+</main>
+
+
+{% endblock %}

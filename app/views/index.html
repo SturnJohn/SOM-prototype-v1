@@ -1,6 +1,14 @@
 {% extends "layout.html" %} {% block page_title %} GOV.UK prototype kit {% endblock %} {% block content %}
 
 <main id="content" role="main">
+
+    <div class="phase-banner">
+        <p>
+            <strong class="phase-tag">ALPHA</strong>
+            <span>This is a new service – your <a href="#">feedback</a> will help us to improve it.</span>
+        </p>
+    </div>
+
     <div class="breadcrumbs">
         <ol>
             <li><a href="https://www.gov.uk">Home</a></li>
@@ -35,7 +43,7 @@
                 </p>
             </div>
             <p><button class="margin-top-1 button button-start" role="button">Start now</button></p>
-            
+
 
             <h3 class="margin-top-6 heading-medium">Before you start</h3>
 
@@ -63,9 +71,9 @@
 </main>
 
 <script>
-$(".button").click( function(){
-    go("simple-search/search")
-})
+    $(".button").click(function() {
+        go("simple-search/search")
+    })
 </script>
 
 {% endblock %}

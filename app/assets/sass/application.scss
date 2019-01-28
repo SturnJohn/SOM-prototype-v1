@@ -138,6 +138,16 @@ $path: "/public/images/";
     background-repeat: no-repeat;
 }
 
+.reg-icon-2-big {
+    height: 100px;
+    width: 333px;
+    background-size: 100%;
+    background-position: center;
+    border-style: none;
+    background-image: url("/public/images/reg-icon-2.svg");
+    background-repeat: no-repeat;
+}
+
 .reg-icon-3 {
     height: 70px;
     width: 219px;
@@ -285,4 +295,35 @@ $path: "/public/images/";
     padding: 8px;    
 }
 
+.non-bold {
+    font-size: 36px;
+    font-weight: 100;
+    line-height: 40px;
+}
+
+.car-preview {
+    height: 522px;
+    width: 522px;
+    background-size: 100%;
+    background-position: center;
+    border-style: none;
+    background-image: url("/public/images/car.png");
+    background-repeat: no-repeat;
+}
+
+.buy-now {
+    width: 150px;
+    background-color: #00823b;
+    font: gds transport 16px white;
+    box-shadow: 0 2px 0 #003618;    
+}
+
+.security-code {
+    width: 500px;
+    height: 120px;
+    background-image: url("/public/images/security-code.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-bottom: 1em;
+}
 // Add extra styles here, or re-organise the Sass files in whichever way makes most sense to you

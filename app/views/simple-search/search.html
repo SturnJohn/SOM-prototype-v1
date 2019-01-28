@@ -1,15 +1,16 @@
 {% extends "layout.html" %} {% block page_title %} GOV.UK prototype kit {% endblock %} {% block content %}
 
 <main id="content" role="main">
-    <div class="breadcrumbs">
-        <ol>
-            <li><a href="https://www.gov.uk">Home</a></li>
-            <li><a href="">Driving and transport</a></li>
-            <li><a href="">Number plates, vehicle registration and log books</a></li>
-        </ol>
+
+    <div class="phase-banner">
+        <p>
+            <strong class="phase-tag">ALPHA</strong>
+            <span>This is a new service – your <a href="#">feedback</a> will help us to improve it.</span>
+        </p>
     </div>
+
     <div class="grid-row">
-        <div class="column-one-half">
+        <div class="margin-top-2 column-one-half">
 
             <h2 class="heading-large">
                 Search for a personalised registration number
@@ -20,7 +21,7 @@
             <div class="margin-top-7 minus-margin-bottom-6 form-group">
                 <input class="search-field-left form-control" id="ni-number" type="text" name="ni-number">
             </div>
-            
+
             <div>
                 <input class="search-box-left" id="search" type="button" name="search">
             </div>
@@ -28,7 +29,7 @@
         </div>
 
 
-        <div class="column-one-half">
+        <div class="margin-top-2 column-one-half">
 
             <h2 class="heading-large">
                 Help me search for a registration number </h2>
