@@ -318,12 +318,28 @@ $path: "/public/images/";
     box-shadow: 0 2px 0 #003618;    
 }
 
-.security-code {
-    width: 500px;
-    height: 120px;
-    background-image: url("/public/images/security-code.png");
+.v5c {
+    width: 150px;
+    height: 210px;
+    background-image: url("/public/images/v5c.svg");
     background-repeat: no-repeat;
     background-size: contain;
     margin-bottom: 1em;
+}
+
+.title-select {
+    width: 150px;
+}
+
+.first-name {
+    width: 315px;
+}
+
+.last-name {
+    width: 315px;
+}
+
+.postcode {
+    width: 150px;
 }
 // Add extra styles here, or re-organise the Sass files in whichever way makes most sense to you

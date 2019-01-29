@@ -1,0 +1,65 @@
+{% extends "layout.html" %} {% block page_title %} GOV.UK prototype kit {% endblock %} {% block content %}
+
+<main id="content" role="main">
+
+    <div class="phase-banner">
+        <p>
+            <strong class="phase-tag">ALPHA</strong>
+            <span>This is a new service – your <a href="#">feedback</a> will help us to improve it.</span>
+        </p>
+    </div>
+
+    <div>
+        <a href="keeper-company" class="link-back">Back</a></div>
+
+    <div class="grid-row">
+
+        <div class="column-one-half">
+
+            <div>
+                <h2 class="margin-top-2 margin-bottom-1 heading-large">
+                    Find your address </h2>
+            </div>
+
+
+            <form>
+                <div class="form-group">
+                    <fieldset>
+
+                        <div class="margin-bottom-4 margin-top-3 form-group" id="first-name">
+
+                            <label class="form-label" for="first-name">Building number (optional)</label>
+
+                            <input class="first-name form-control" id="first-tname" name="first-name" type="text">
+                        </div>
+                        <div class="margin-bottom-1 form-group" id="last-name">
+
+
+                            <label class="form-label" for="last-name">Postcode</label>
+
+                            <input class="postcode form-control" id="last-name" name="last-name" type="text">
+                        </div>
+
+                    </fieldset>
+                </div>
+
+                <button class="margin-bottom-3 margin-top-3 button" type="button">Find your address</button>
+
+            </form>
+
+            <div class="margin-top-1">
+                <P>
+                    <a href="#">I would prefer to enter my address manually</a>
+                </P>
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+</main>
+
+
+{% endblock %}

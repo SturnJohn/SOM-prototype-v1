@@ -1,0 +1,102 @@
+{% extends "layout.html" %} {% block page_title %} GOV.UK prototype kit {% endblock %} {% block content %}
+
+<main id="content" role="main">
+
+    <div class="phase-banner">
+        <p>
+            <strong class="phase-tag">ALPHA</strong>
+            <span>This is a new service – your <a href="#">feedback</a> will help us to improve it.</span>
+        </p>
+    </div>
+
+    <div>
+        <a href="keeper-company" class="link-back">Back</a></div>
+
+    <div class="grid-row">
+
+        <div class="column-one-half">
+
+            <div>
+                <h2 class="margin-top-2 margin-bottom-2 heading-large">
+                    Your details </h2>
+            </div>
+
+
+            <div>
+                <P>
+                    By purchasing this registration number you are obtaining the rights to display it on a vehicle
+                </P>
+            </div>
+
+            <form>
+                <div class="form-group">
+                    <fieldset>
+
+                        <div class="margin-bottom-4 form-group" id="select-title">
+                            <label class="form-label">Title</label>
+
+                            <select class="title-select form-control" id="select-box" name="select-box">
+                                <option></option>
+                                <option value="Mr">Mr</option>
+                                <option value="Mrs">Mrs</option>
+                                <option value="Miss">Miss</option>
+                                <option value="Ms">Ms</option>
+                                <option value="Other">Other</option>
+                            </select>
+
+                            <div class="margin-top-2 panel panel-border-narrow" id="other">
+                                <label class="form-label" for="other-title">Other title</label>
+                                <input class="form-control" type="text" id="other-title" name="other-title">
+                            </div>
+                        </div>
+
+
+
+                        <div class="margin-bottom-4 margin-top-3 form-group" id="first-name">
+
+                            <label class="form-label" for="first-name">First names</label>
+
+                            <input class="first-name form-control" id="first-tname" name="first-name" type="text">
+                        </div>
+                        <div class="margin-bottom-2 form-group" id="last-name">
+
+
+                            <label class="form-label" for="last-name">Last name</label>
+
+                            <input class="last-name form-control-66 form-control" id="last-name" name="last-name" type="text">
+                        </div>
+
+                    </fieldset>
+                </div>
+
+                <button class="margin-bottom-0 margin-top-3 button" type="button">Continue</button>
+
+            </form>
+
+
+        </div>
+
+    </div>
+
+
+</main>
+
+
+{% endblock %}
+
+<script>
+    $('select').change(function() {
+        var title = $('#select-box option:selected').val();
+
+
+        if (title == 'Other') {
+            $('#other').show();
+
+        } else {
+            $('#other').hide();
+        }
+
+    });
+
+    $('.button').click(validate);
+</script>
