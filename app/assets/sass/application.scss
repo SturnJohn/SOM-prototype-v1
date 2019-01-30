@@ -37,38 +37,18 @@ $path: "/public/images/";
 
 }
 
-.search-field-right:after {
-    width: 20px;
-    height: 20px;
-    background-color: red;
-    position: absolute;
-    left: 0;
-    top: 0;
-}
-
-.search-box-right {
-    height: 60px;
-    width: 60px;
-    background-color: #005EA5;
-    background-image: url("/public/images/magnifying glass.svg");
-    background-repeat: no-repeat;
-    background-size: 60%;
-    background-position: center;
-    border-style: none;
-}
-
 .price-sort {
     width: 280px;
 }
 
-.search-field-left {
+.search-field {
     border: #005EA5 4px solid;
     height: 60px;
     width: 320px;
     box-shadow: 0 2px 0 #003618;
 }
 
-.search-box-left {
+.search-box {
     height: 60px;
     width: 60px;
     background-color: #005EA5;
@@ -77,8 +57,6 @@ $path: "/public/images/";
     background-size: 60%;
     background-position: center;
     border-style: none;
-    margin-left: 256px;
-    margin-top: -3px;
 }
 
 .view {
@@ -86,6 +64,7 @@ $path: "/public/images/";
 }
 
 .list {
+    display: inline-block;
     margin-left: 20px;
 }
 

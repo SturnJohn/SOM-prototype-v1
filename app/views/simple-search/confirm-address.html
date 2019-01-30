@@ -1,0 +1,38 @@
+{% extends "layout.html" %} {% block page_title %} Blank page {% endblock %} {% block content %}
+
+<main id="content" role="main">
+
+    <div class="phase-banner">
+        <p><strong class="phase-tag">ALPHA</strong><span>This is a new service – your <a href="#">feedback</a> will help us to improve it.</span></p>
+    </div>
+    <div>
+        <a href="/create/address" class="link-back">Back</a>
+    </div>
+    
+    <div class="grid-row">
+        <div class="column-two-thirds">
+
+            <div>
+                <h2 class="margin-top-2 margin-bottom-1 heading-large">
+                    Is this address correct? </h2>
+            </div>
+
+            <div>
+                <h4 class="heading-small">1 Example Close <br>Swansea <br>SA1 2BC</h4>
+
+            </div>
+            
+             <button class="margin-bottom-3 margin-top-3 button" type="button">Yes, continue</button>
+            
+            <div>
+            <a href="#">This address is not correct, I would prefer to enter it manually</a>
+            </div>
+
+
+        </div>
+    </div>
+
+</main>
+
+
+{% endblock %}
