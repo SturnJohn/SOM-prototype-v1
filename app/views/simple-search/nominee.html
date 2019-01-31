@@ -1,0 +1,67 @@
+{% extends "layout.html" %} {% block page_title %} GOV.UK prototype kit {% endblock %} {% block content %}
+
+<main id="content" role="main">
+
+    <div class="phase-banner">
+        <p>
+            <strong class="phase-tag">ALPHA</strong>
+            <span>This is a new service – your <a href="#">feedback</a> will help us to improve it.</span>
+        </p>
+    </div>
+
+    <div>
+        <a href="keeper-company" class="link-back">Back</a></div>
+
+    <div class="grid-row">
+
+        <div class="column-two-thirds">
+
+            <div class="form-group">
+                <fieldset class="inline">
+
+                    <legend>
+                        <h2 class="heading-large">Are you purchasing this registration number for someone else?</h2>
+                    </legend>
+                    <div>
+                        <div class="multiple-choice" data-target="nominee">
+                            <input id="yes-for-nominee" type="radio" name="radio-contact-group" value="Yes">
+                            <label for="yes-for-nominee">Yes</label>
+                        </div>
+
+                        <div class="panel panel-border-narrow js-hidden" id="nominee">
+
+                            <h3 class="heading-medium">Nominee</h3>
+
+                            <p>The nominee will own the full rights to display the registration number once it has been put onto their vechicle</p>
+
+                            <div class="form-group">
+                                <label class="form-label" for="nominee-full-name">Full name</label>
+                                <input class="form-control" id="nominee-full-name" type="text" name="nominee-full-name">
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="margin-left-2 multiple-choice">
+                            <input id="no-for-nominee" type="radio" name="radio-contact-group" value="No">
+                            <label for="no-for-nominee">No</label>
+                        </div>
+                    </div>
+
+                </fieldset>
+            </div>
+
+
+
+            <button class="margin-bottom-0 margin-top-3 button" type="button">Continue</button>
+
+
+
+        </div>
+    </div>
+
+</main>
+
+
+{% endblock %}
