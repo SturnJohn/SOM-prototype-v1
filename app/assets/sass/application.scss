@@ -127,6 +127,15 @@ $path: "/public/images/";
     background-repeat: no-repeat;
 }
 
+.reg-icon-2-medium {
+    height: 40px;
+    width: 138px;
+    background-size: 100%;
+    background-position: center;
+    background-image: url("/public/images/reg-icon-2.svg");
+    background-repeat: no-repeat;
+}
+
 .reg-icon-3 {
     height: 70px;
     width: 219px;
@@ -328,5 +337,15 @@ $path: "/public/images/";
 
 .phone-number {
     width: 326px;
+}
+
+.full-name {
+    width: 620px;
+}
+
+.johns-table {
+    th, td {
+        width: 50%;
+    } 
 }
 // Add extra styles here, or re-organise the Sass files in whichever way makes most sense to you
