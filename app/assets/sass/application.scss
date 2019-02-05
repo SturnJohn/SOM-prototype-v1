@@ -44,7 +44,7 @@ $path: "/public/images/";
 .search-field {
     border: #005EA5 4px solid;
     height: 60px;
-    width: 320px;
+    width: 100%;
     box-shadow: 0 2px 0 #003618;
 }
 
@@ -54,9 +54,18 @@ $path: "/public/images/";
     background-color: #005EA5;
     background-image: url("/public/images/magnifying glass.svg");
     background-repeat: no-repeat;
-    background-size: 60%;
+    background-size: 50%;
     background-position: center;
     border-style: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.search-container {
+    position: relative;
+    width: 70%;
+    min-width: 300px;
 }
 
 .list {
@@ -276,7 +285,7 @@ $path: "/public/images/";
     border: 3px solid #FFBF47;
     display: inline-block;
     margin-left: 20px;
-    padding: 8px;    
+    padding: 8px;
 }
 
 .non-bold {
@@ -299,7 +308,7 @@ $path: "/public/images/";
     width: 150px;
     background-color: #00823b;
     font: gds transport 16px white;
-    box-shadow: 0 2px 0 #003618;    
+    box-shadow: 0 2px 0 #003618;
 }
 
 .v5c {
@@ -340,10 +349,11 @@ $path: "/public/images/";
 }
 
 .johns-table {
-    th, td {
+    th,
+    td {
         width: 60%;
         padding-top: 16px;
-        padding-bottom: 16px; 
+        padding-bottom: 16px;
     }
 }
 
@@ -401,4 +411,9 @@ $path: "/public/images/";
         text-align: center;
     }
 }
+
+.centred-button {
+    position: absolute;
+}
+
 // Add extra styles here, or re-organise the Sass files in whichever way makes most sense to you
