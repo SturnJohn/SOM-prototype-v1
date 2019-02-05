@@ -37,7 +37,7 @@
                     </tr>
                     <tr>
                         <th class="bold-small" scope="row">Total amount to pay</th>
-                        <td class="bold-small padding-right-3 padding-top-3 padding-bottom-2">£165.00</td>
+                        <td class="">£165.00</td>
                     </tr>
                 </tbody>
             </table>
@@ -54,26 +54,26 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <th class="padding-top-3 padding-bottom-2">Title</th>
-                        <td class="bold-small padding-right-3 padding-top-3 padding-bottom-2">Mr</td>
+                        <th>Title</th>
+                        <td class="bold-small">Mr</td>
 
                     </tr>
                     <tr>
-                        <th class="padding-top-3 padding-bottom-2">Name</th>
-                        <td class="bold-small padding-top-3 padding-bottom-2">John Smith</td>
+                        <th>Name</th>
+                        <td class="bold-small">John Smith</td>
                     </tr>
                     <tr>
-                        <th class="padding-top-3 padding-bottom-2">Address</th>
-                        <td class="bold-small padding-right-3 padding-top-3 padding-bottom-2">1 Example Close<br>Swansea<br> SA1 2BC</td>
+                        <th>Address</th>
+                        <td class="bold-small">1 Example Close<br>Swansea<br> SA1 2BC</td>
 
                     </tr>
                     <tr>
-                        <th class="padding-top-3 padding-bottom-2">Email</th>
-                        <td class="bold-small padding-top-3 padding-bottom-2">john.smith@gmail.com</td>
+                        <th>Email</th>
+                        <td class="bold-small">john.smith@gmail.com</td>
                     </tr>
                     <tr>
-                        <th class="padding-top-3 padding-bottom-2">Phone</th>
-                        <td class="bold-small padding-top-3 padding-bottom-2">01234567891</td>
+                        <th>Phone</th>
+                        <td class="bold-small">01234567891</td>
                     </tr>
                 </tbody>
             </table>
@@ -87,7 +87,7 @@
 
 
 
-            <button class="margin-bottom-0 margin-top-4 button" type="button">Confirm and continue to payment</button>
+            <button class="margin-bottom-0 margin-top-4 button" type="submit">Confirm and continue to payment</button>
 
 
 
@@ -96,5 +96,10 @@
 
 </main>
 
+<script>
+    $(".button").click(function() {
+        go("/simple-search/purchaser-payment")
+    })
+</script>
 
 {% endblock %}

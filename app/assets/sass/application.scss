@@ -59,10 +59,6 @@ $path: "/public/images/";
     border-style: none;
 }
 
-.view {
-   
-}
-
 .list {
     display: inline-block;
     margin-left: 20px;
@@ -345,7 +341,64 @@ $path: "/public/images/";
 
 .johns-table {
     th, td {
-        width: 50%;
-    } 
+        width: 60%;
+        padding-top: 16px;
+        padding-bottom: 16px; 
+    }
+}
+
+.payment-cards {
+    width: 210px;
+    height: 40px;
+    background-image: url("/public/images/credit-debit-cards.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-bottom: 1em;
+}
+
+.name-on-card {
+    width: 439px;
+}
+
+.card-number {
+    width: 439px;
+}
+
+.month {
+    width: 110px;
+}
+
+.year {
+    width: 110px;
+}
+
+.security-code {
+    width: 500px;
+    height: 120px;
+    background-image: url("/public/images/security-code.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-bottom: 1em;
+}
+
+.three-digit-code {
+    width: 110px;
+}
+
+.success-panel {
+    text-align: center;
+    margin-top: 2.2em;
+    background-color: #28A197;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    color: white;
+    margin-bottom: 3em;
+    width: 100%;
+    h2 {
+        text-align: center;
+    }
+    h3 {
+        text-align: center;
+    }
 }
 // Add extra styles here, or re-organise the Sass files in whichever way makes most sense to you

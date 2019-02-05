@@ -1,0 +1,116 @@
+{% extends "layout.html" %} {% block page_title %} GOV.UK prototype kit {% endblock %} {% block content %}
+
+<main id="content" role="main">
+
+    <div class="phase-banner">
+        <p>
+            <strong class="phase-tag">ALPHA</strong>
+            <span>This is a new service – your <a href="#">feedback</a> will help us to improve it.</span>
+        </p>
+    </div>
+
+    <div>
+        <a href="keeper-company" class="link-back">Back</a></div>
+
+    <div class="grid-row">
+
+        <div class="column-two-thirds">
+            <h1 class="heading-large">Enter payment details</h1>
+            <h3 class="heading-medium">Pay by credit or debit card</h3>
+
+            <div class="payment-cards"></div>
+            <p>You can pay using Visa debit and credit, Mastercard debit and credit <br>or Visa Electron cards.</p>
+            <span class="margin-right-6">Payment reference</span>
+            <span class="bold-small">XXXXXXXX</span>
+            <div>
+                <span class="margin-right-5">Total amount to pay</span>
+                <span class="bold-small">£XX.XX</span>
+            </div>
+
+
+            <p class=""></p>
+
+            <div class="form-group">
+                <label class="form-label" for="ni-number"><strong class="bold-small">Name on card</strong>
+                    <span class="form-hint">Your name as it appears on the front of the card</span></label>
+                <input class="name-on-card form-control" id="ni-number" type="text" name="ni-number">
+            </div>
+
+            <div class="form-group">
+                <label class="form-label" for="ni-number"><strong class="bold-small">Card number</strong>
+                    <span class="form-hint">The long card number on the front of your card</span></label>
+                <input class="card-number form-control" id="ni-number" type="text" name="ni-number">
+            </div>
+
+            <div class="margin-top-4">
+                <div class="form-group">
+                    <label class="form-label" for="select-box"><strong class="bold-small">Expiry date</strong></label>
+                    <select class="margin-right-3 month form-control" id="select-box" name="select-box">
+                    <option>Month</option>
+                    <option>January</option>
+                    <option>February</option>
+                    <option>March</option>
+                    <option>April</option>
+                    <option>May</option>
+                    <option>June</option>
+                    <option>July</option>
+                    <option>August</option>
+                    <option>September</option>
+                    <option>October</option>
+                    <option>November</option>
+                    <option>December</option>
+                </select>
+
+                    <select class="year form-control" id="select-box" name="select-box">
+                    <option>Year</option>
+                    <option>2018</option>
+                    <option>2019</option>
+                    <option>2020</option>
+                    <option>2021</option>
+                    <option>2022</option>
+                    <option>2023</option>
+                    <option>2024</option>
+                    <option>2025</option>
+                    <option>2026</option>
+                    <option>2027</option>
+                    <option>2028</option>
+                </select>
+                </div>
+            </div>
+
+            <div class="margin-top-4 form-group">
+                <label class="form-label" for="ni-number"><strong class="bold-small">Card security code</strong>
+                    <span class="form-hint">The 3 digit code found on the back of the card</span></label>
+                <input class="three-digit-code form-control" id="ni-number" type="text" name="ni-number">
+            </div>
+
+            <details>
+                <summary><span class="summary">Where to find this?</span></summary>
+                <div class="panel panel-border-narrow">
+                    <div class="security-code"></div>
+                </div>
+                <div class="form-group">
+                    <div class="inline">
+
+                    </div>
+                </div>
+            </details>
+
+            <button class="margin-bottom-6 margin-top-3 button" type="submit">Pay now</button>
+            
+            <p class="minus-margin-top-2"><a href="#">Cancel my payment</a></p>
+            <p class="margin-top-4">Card information is transferred in accordance with our security statement and is held in accordance with our privacy statement. Please see our terms and conditions below for further information.</p>
+
+        </div>
+    </div>
+
+
+</main>
+
+<script>
+    $(".button").click(function() {
+        go("/simple-search/payment-success")
+    })
+</script>
+
+{% endblock %}

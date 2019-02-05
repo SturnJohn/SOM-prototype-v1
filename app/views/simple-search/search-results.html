@@ -228,15 +228,23 @@
                 </p>
             </div>
 
-            <div>
-                <!--                <input class="button" id="search" type="button" name="search">-->
-            </div>
 
+        </div>
+        <div class="margin-top-2 column-one-half">
+            <div>
+                <button class="margin-bottom-0 margin-top-3 button" type="submit">Show more</button>
+            </div>
         </div>
     </div>
 
 
 </main>
+
+<script>
+    $(".button").click(function() {
+        go("/simple-search/search-results")
+    })
+</script>
 
 
 {% endblock %}

@@ -39,7 +39,8 @@
             </div>
 
             <div>
-                <button class="buy-now button" role="button">Buy now</button>
+                <button class="margin-bottom-0 margin-top-3 button" type="submit">Buy now</button>
+
             </div>
 
             <div>
@@ -57,19 +58,15 @@
             </div>
         </div>
 
-
-
-
-
-
-
-
-
-
     </div>
 
 
 </main>
 
+<script>
+    $(".button").click(function() {
+        go("/simple-search/suitability-of-vehicle")
+    })
+</script>
 
 {% endblock %}

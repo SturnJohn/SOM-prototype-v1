@@ -1,0 +1,78 @@
+{% extends "layout.html" %} {% block page_title %} GOV.UK prototype kit {% endblock %} {% block content %}
+
+<main id="content" role="main">
+
+    <div class="phase-banner">
+        <p>
+            <strong class="phase-tag">ALPHA</strong>
+            <span>This is a new service – your <a href="#">feedback</a> will help us to improve it.</span>
+        </p>
+    </div>
+
+    <div class="grid-row">
+
+        <div class="column-two-thirds">
+
+            <div class="margin-top-8 success-panel">
+
+                <h2 class="margin-bottom-2 heading-large">Your purchase was successful</h2>
+                <div class="inline-block reg-icon-2-big">
+                </div>
+
+                <h3 class="margin-top-2 heading-medium">Your reference number:<br>11111111111 </h3>
+            </div>
+
+            <p class="minus-margin-top-3">A receipt of the transaction and an electronic number plate authorisation certificate has been sent to <a href="#">john.smith@gmail.com</a>.
+            </p>
+
+            <table class="johns-table">
+                <thead>
+                    <tr>
+                        <th>
+                            <h3 class="margin-top-3 margin-bottom-0 heading-medium">Payment Summary</h3>
+                        </th>
+                        <th class="numeric" scope="col"></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">Registration number</th>
+                        <td>
+                            <div class="reg-icon-2-medium"></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Price</th>
+                        <td class="">£870.00</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Card number</th>
+                        <td class="">1234 5678 9123 4567</td>
+                    </tr>
+                    <tr>
+                        <th class="bold-small" scope="row">Total</th>
+                        <td class="bold-small">GBP £870.00</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3 class="margin-top-6 heading-medium">What to do next</h3>
+
+            <p class="margin-top-2">To <a href="#">put this registration number</a> on a vehicle you will need the reference number in the box above and the V5C registration certificate for the vehicle.
+            </p>
+
+            <p class="margin-top-2">Get number plates made up with your nearest <a href="#"> registered number plate supplier </a> (RNPS) using the electronic number plate authorisation certificate. You do not need to wait for the registration certificate to arrive in the post to get number plates.
+            </p>
+
+            <p>You can <a href="#">print this page</a> for your records.
+            </p>
+
+            <button class="margin-bottom-0 margin-top-4 button" type="button">Return to GOV.UK</button>
+
+        </div>
+    </div>
+
+</main>
+
+
+{% endblock %}

@@ -57,7 +57,7 @@
             </fieldset>
 
             <div>
-                <span><button class="margin-top-7 button" role="button">Continue</button></span>
+                <button class="margin-bottom-0 margin-top-6 button" type="submit">Continue</button>
             </div>
 
         </div>
@@ -66,6 +66,12 @@
 
 
 </main>
+
+<script>
+    $(".button").click(function() {
+        go("/simple-search/gdpr")
+    })
+</script>
 
 
 {% endblock %}

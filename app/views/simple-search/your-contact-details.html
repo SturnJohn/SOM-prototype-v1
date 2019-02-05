@@ -55,7 +55,7 @@
 
 
 
-            <button class="margin-bottom-0 margin-top-3 button" type="button">Continue</button>
+            <button class="margin-bottom-0 margin-top-3 button" type="submit">Continue</button>
 
 
         </div>
@@ -65,5 +65,10 @@
 
 </main>
 
+<script>
+    $(".button").click(function() {
+        go("/simple-search/nominee")
+    })
+</script>
 
 {% endblock %}

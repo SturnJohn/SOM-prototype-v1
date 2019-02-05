@@ -42,8 +42,7 @@
 
                     </fieldset>
                 </div>
-
-                <button class="margin-bottom-3 margin-top-3 button" type="button">Find your address</button>
+                <button class="margin-bottom-2 margin-top-2 button" type="submit">Find your address</button>
 
             </form>
 
@@ -61,5 +60,10 @@
 
 </main>
 
+<script>
+    $(".button").click(function() {
+        go("/simple-search/select-your-address")
+    })
+</script>
 
 {% endblock %}

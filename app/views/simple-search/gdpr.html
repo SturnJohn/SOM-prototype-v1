@@ -8,9 +8,9 @@
             <span>This is a new service – your <a href="#">feedback</a> will help us to improve it.</span>
         </p>
     </div>
-    
+
     <div>
-    <a href="keeper-company" class="link-back">Back</a></div>
+        <a href="keeper-company" class="link-back">Back</a></div>
 
     <div class="grid-row">
 
@@ -34,7 +34,8 @@
 
 
             <div>
-                <span><button class="margin-top-3 button" role="button">Accept and continue</button></span>
+                <button class="margin-bottom-0 margin-top-3 button" type="submit">Accept and continue</button>
+
             </div>
 
         </div>
@@ -44,5 +45,10 @@
 
 </main>
 
+<script>
+    $(".button").click(function() {
+        go("/simple-search/your-details")
+    })
+</script>
 
 {% endblock %}
