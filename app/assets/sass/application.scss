@@ -37,8 +37,13 @@ $path: "/public/images/";
 
 }
 
+.sort {
+    display: inline-block;
+    margin-left: 120px;
+}
+
 .price-sort {
-    width: 280px;
+    width: 238px;
 }
 
 .search-field {
@@ -68,25 +73,27 @@ $path: "/public/images/";
     min-width: 300px;
 }
 
-.list {
-    display: inline-block;
-    margin-left: 20px;
+.toolbar-view-options {
+    float: right;
+    margin-top: -4px;
 }
 
 .list-icon {
-    display: inline-block;
     height: 25px;
     width: 25px;
     background-image: url("/public/images/list-icon.svg");
     background-repeat: no-repeat;
-    background-position: center;
+    display: inline-block;
+    vertical-align: bottom;
     margin-left: 8px;
 
 }
 
-.grid {
+.in-focus {
     display: inline-block;
-
+    border: 3px solid #FFBF47;
+    margin-left: 20px;
+    padding: 6px 6px 4px 6px;
 }
 
 .grid-icon {
@@ -94,8 +101,10 @@ $path: "/public/images/";
     width: 25px;
     background-image: url("/public/images/grid-icon.svg");
     background-repeat: no-repeat;
-    float: right;
-    margin-left: 10px;
+    display: inline-block;
+    vertical-align: bottom;
+    margin-left: 8px;
+    
 }
 
 .keyline {
@@ -281,13 +290,6 @@ $path: "/public/images/";
     background-repeat: no-repeat;
 }
 
-.in-focus {
-    border: 3px solid #FFBF47;
-    display: inline-block;
-    margin-left: 20px;
-    padding: 8px;
-}
-
 .non-bold {
     font-size: 36px;
     font-weight: 100;
@@ -414,6 +416,10 @@ $path: "/public/images/";
 
 .button-container {
     text-align: center;
+}
+
+.show-more {
+    width: 180px;
 }
 
 // Add extra styles here, or re-organise the Sass files in whichever way makes most sense to you
