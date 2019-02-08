@@ -21,34 +21,34 @@
             <div class="margin-top-4 form-group">
                 <div class="search-container">
                     <input class="search-field form-control" id="ni-number" type="text" name="ni-number">
-                    <input class="search-box" id="search" type="button" name="search">
+                    <p><button class="search-box button" role="button"></button></p>
                 </div>
             </div>
 
 
-            </div>
+        </div>
 
 
-            <div class="margin-top-2 column-one-half">
+        <div class="margin-top-2 column-one-half">
 
-                <h2 class="heading-large">
-                    Help me search for a registration number </h2>
-                <p>
-                    We will ask you a number of questions to help you in searching for a personalised registation number.
-                </p>
+            <h2 class="heading-large">
+                Help me search for a registration number </h2>
+            <p>
+                We will ask you a number of questions to help you in searching for a personalised registation number.
+            </p>
 
 
-                <p><button class="margin-top-2 button" role="button">Begin the search</button></p>
-
-            </div>
+            <p><button class="margin-top-2 button" role="button">Begin the search</button></p>
 
         </div>
+
+    </div>
 
 </main>
 
 <script>
     $(".button").click(function() {
-        go("/simple-search/preview-result")
+        go("/simple-search/search-results")
     })
 </script>
 

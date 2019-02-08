@@ -306,6 +306,14 @@ $path: "/public/images/";
     background-repeat: no-repeat;
 }
 
+.button-container {
+    text-align: center;
+}
+
+.show-more {
+    width: 180px;
+}
+
 .buy-now {
     width: 150px;
     background-color: #00823b;
@@ -357,6 +365,10 @@ $path: "/public/images/";
         padding-top: 16px;
         padding-bottom: 16px;
     }
+}
+
+.address {
+    vertical-align: top; 
 }
 
 .payment-cards {
@@ -414,12 +426,5 @@ $path: "/public/images/";
     }
 }
 
-.button-container {
-    text-align: center;
-}
-
-.show-more {
-    width: 180px;
-}
 
 // Add extra styles here, or re-organise the Sass files in whichever way makes most sense to you
