@@ -358,10 +358,34 @@ $path: "/public/images/";
     width: 620px;
 }
 
-.johns-table {
+.change {
+    text-align: right;
+    font-size: 19px;
+    vertical-align: top;
+}
+
+.summary-table {
     th,
     td {
-        width: 60%;
+        width: 50%;
+        padding-top: 16px;
+        padding-bottom: 16px;
+    }
+}
+
+.purchaser-table {
+    th,
+    td {
+        width: 55%;
+        padding-top: 16px;
+        padding-bottom: 16px;
+    }
+}
+
+.nominee-table {
+    th,
+    td {
+        width: 54%;
         padding-top: 16px;
         padding-bottom: 16px;
     }
